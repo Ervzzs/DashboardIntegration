@@ -12,7 +12,7 @@ h1 {
   position: relative;
 }
 .notif::after {
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   background: red;
@@ -77,86 +77,74 @@ hr {
   left: 0;
   top: 0;
   height: 100%;
-  width: 25;
-  // background-color: #2b882e;
+  background: #2b882e;
   // background: #00acbe;
   // background: #205330;
 }
 
-.green {
-  background-color: #4b6f0b;
-}
-.red {
-  background-color: #dc2521;
-}
-.orange {
-  background-color: orange;
-}
-
-#dropdownContent {
+#dropdownContent{
   position: absolute;
   right: 29px;
   top: 52px;
   z-index: 2000;
   max-height: 0;
-  background-color: #3a3a3a;
+  background-color:#3a3a3a;
   border-radius: 5px !important;
   width: 200px;
   transition: 0.5s all;
   overflow: hidden;
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 5px;
-    width: 100%;
+  ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      border-radius: 5px;
+      width: 100%;
   }
-  li {
-    height: 18px;
-    font-size: 13px;
-    text-align: center;
-    padding: 8px 12px;
-    padding-bottom: 25px;
-    margin: auto;
-    width: 100%;
-  }
-
-  li:hover {
-    background-color: gainsboro;
-    cursor: pointer;
-    border-radius: 5px;
-    color: rgb(77, 77, 77);
+  li{
+      height: 18px;
+      font-size: 13px;
+      text-align: center;
+      padding: 8px 12px;
+      padding-bottom: 25px;
+      margin: auto;
+      width: 100%;
   }
 
-  a:hover {
-    background-color: gainsboro;
-    cursor: pointer;
-    border-radius: 5px;
-    color: rgb(77, 77, 77);
+  li:hover{
+      background-color: gainsboro;
+      cursor: pointer;
+      border-radius: 5px;
+      color: rgb(77, 77, 77);
+  }
+
+  a:hover{
+      background-color: gainsboro;
+      cursor: pointer;
+      border-radius: 5px;
+      color: rgb(77, 77, 77);
   }
   &.active {
-    max-height: 500px;
+      max-height: 500px;
   }
 }
 
-#dropdown-button {
-  margin-top: 0.1px;
+#dropdown-button{
   margin-left: 5px;
 }
 
-#dropdown-button .ecp-button .button-default {
+#dropdown-button .ecp-button .button-default{
   font-size: 13px !important;
   height: 27px !important;
 }
 
-#ptoForm {
-  display: flex;
+#ptoForm{
+  display:flex;
   width: 60% !important;
 }
 
-.ptoInput .DatePickerField {
+.ptoInput .DatePickerField{
   width: 49% !important;
 }
 
@@ -173,45 +161,13 @@ hr {
   color: #2c3e50;
 }
 
-#profile-card {
-  // background-color: red;
-  margin: 10px;
-  width: 95%;
-  height: fit-content;
-}
-#profile-card:hover {
-  transform: scale(1.035);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-}
-.member-image {
-  img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.member-util-label {
-  display: flex;
-  justify-content: center;
-}
-.member-util-label h2 {
-  font-size: 16px;
-}
-.member-image {
-  pointer-events: none;
-}
-
 @keyframes width {
   0%,
   100% {
-    transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
+      transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
   }
   0% {
-    width: 0;
+      width: 0;
   }
   // 100% {
   //     width: 100%;
@@ -246,7 +202,7 @@ div {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-decoration: none !important;
   background-color: black !important;
   color: white;
@@ -314,14 +270,12 @@ div {
   border: none;
   display: flex;
   flex-flow: column wrap;
-  // padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
   width: 100%;
   justify-content: left;
 }
 
 .parentCard {
-  width: 100%;
-  // margin: 10px;
   min-height: 100vh;
 }
 
@@ -600,56 +554,56 @@ a.ews-icon-add {
 }
 @-webkit-keyframes fadein {
   from {
-    bottom: 0;
-    opacity: 0;
+      bottom: 0;
+      opacity: 0;
   }
   to {
-    bottom: 30px;
-    opacity: 1;
+      bottom: 30px;
+      opacity: 1;
   }
 }
 
 @keyframes fadein {
   from {
-    bottom: 0;
-    opacity: 0;
+      bottom: 0;
+      opacity: 0;
   }
   to {
-    bottom: 30px;
-    opacity: 1;
+      bottom: 30px;
+      opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeout {
   from {
-    bottom: 30px;
-    opacity: 1;
+      bottom: 30px;
+      opacity: 1;
   }
   to {
-    bottom: 0;
-    opacity: 0;
+      bottom: 0;
+      opacity: 0;
   }
 }
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
-    opacity: 1;
+      bottom: 30px;
+      opacity: 1;
   }
   to {
-    bottom: 0;
-    opacity: 0;
+      bottom: 0;
+      opacity: 0;
   }
 }
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
-    opacity: 1;
+      bottom: 30px;
+      opacity: 1;
   }
   to {
-    bottom: 0;
-    opacity: 0;
+      bottom: 0;
+      opacity: 0;
   }
 }
 
@@ -659,7 +613,6 @@ a.ews-icon-add {
 
 .default {
   border-top: 3px #d9d9d9 solid;
-  border-radius: 10px;
 }
 
 // Individual Colors:
@@ -734,7 +687,7 @@ a.ews-icon-add {
   vertical-align: baseline;
   border-radius: 0.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .badge-success {
@@ -871,8 +824,8 @@ a.badge-dark.focus {
 
 .ActionButtonCustom {
   background: #000;
-  color: #fff !important;
-  border: 1px solid #fff !important;
+  color: #fff!important;
+  border: 1px solid #fff!important
 }
 
 .days-old {
@@ -888,3 +841,63 @@ a.badge-dark.focus {
   display: flex;
   align-items: center;
 }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  display:flex;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  display:flex;
+  flex-wrap: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  margin-left: 20px;
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  display:flex;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front{
+  box-shadow: 5px 5px 2px #aaaaaa;
+  margin:3px;
+  border-radius:10px;
+  width:40px;
+  height:40px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+}
+
+/* Style the back side */
+.flip-card-back {
+  margin-top: 2px;
+  position: absolute;
+  border-radius:10px;
+  width:107px;
+  height:40px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  transform: rotateY(180deg);
+}
+
+
