@@ -1,97 +1,93 @@
 <!-- Refreshes the page every 15 minutes -->
 <!-- <meta http-equiv="refresh" content="900"> -->
 <style>
-  #ptoForm {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    /* width: 100%; */
+  #ptoForm{
+      display:flex;
+      flex-direction: column;
+      align-self: center;
+      /* width: 100%; */
   }
 
-  #ptoForm input {
-    padding-top: 5px;
-    width: 300px;
+  #ptoForm input{
+      padding-top: 5px;
+      width: 300px;
   }
 
-  ecp-auto-complete {
-    width: 49.5% !important;
+  ecp-auto-complete{
+      width: 49.5% !important;
+  }
+  
+  .DatePickerField{
+      width: 49.5% !important;
   }
 
-  .DatePickerField {
-    width: 49.5% !important;
+  #ptoHours{
+      width: 49.5% !important;
   }
 
-  #ptoHours {
-    width: 49.5% !important;
+  .ptoInput{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* width: 200px; */
   }
 
-  .ptoInput {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* width: 200px; */
-  }
-
-  .ptoInput p {
-    margin-top: 10px;
-    /* padding-top: 10px; */
+  .ptoInput p{
+      margin-top: 10px;
+      /* padding-top: 10px; */
   }
   #UtilizationForm .error {
-    border: 1px solid red;
-    border-radius: 4px;
+      border: 1px solid red;
+      border-radius: 4px;
   }
   #PtoForm .error {
-    border: 1px solid red;
-    border-radius: 4px;
+      border: 1px solid red;
+      border-radius: 4px;
   }
 </style>
 <div class="dashboard-container">
   <div class="dashboard-header-container section-black-bg">
-    <div class="top-section">
-      <h1>GIANT PAYLINK TASKS</h1>
-      <div class="header-buttons-container d-flex">
-        <div id="kpi-button"></div>
-        <a href="" target="_blank" id="kanban-button"> </a>
-        <a href="" target="_blank" id="pm-task-button"></a>
-        <ecp-btn
-          class="hidden"
-          type="secondary"
-          id="dropdown-button"
-          icon="ews-icon-lists"
-        ></ecp-btn>
+      <div class="top-section">
+          <h1>GIANT PAYLINK TASKS</h1>
+          <div class="header-buttons-container d-flex">
+              <div id="kpi-button"></div>
+              <div>
+                  <a href="" target="_blank" id="kanban-button"></a>
+              </div>
+              <div>
+                  <a href="" target="_blank" id="pm-task-button"></a>
+              </div>
+              <ecp-btn class="hidden" type="secondary" id="dropdown-button" icon ="ews-icon-lists"></ecp-btn>
+          </div>
+          <div id = "dropdownContent">
+              <ul>
+                  <li id="task">
+                      <a href="Home?DashboardID=168976" target="_blank" style="color:#fff">
+                          <span class="ews-icon-add"></span> Add Task
+                      </a>
+                  </li>
+                  <!-- <li id="pto"><a id = "ptoBtn"><i class="ews-icon-alarmclock"></i> Add PTO Hours</a></li> -->
+                  <li id="util">
+                      <span class="ews-icon-alarmclock"></span> Add Utilization Hours
+                  </li>
+                  <!-- <li id="pto">
+                      <span class="ews-icon-calendar"></span> ADD PTO
+                  </li> -->
+              </ul>
+          </div>
       </div>
-      <div id="dropdownContent">
-        <ul>
-          <li id="task">
-            <a
-              href="Home?DashboardID=168976"
-              target="_blank"
-              style="color: #fff"
-            >
-              <span class="ews-icon-add"></span> Add Task
-            </a>
-          </li>
-          <!-- <li id="pto"><a id = "ptoBtn"><i class="ews-icon-alarmclock"></i> Add PTO Hours</a></li> -->
-          <li id="util">
-            <span class="ews-icon-alarmclock"></span> Add Utilization Hours
-          </li>
-          <!-- <li id="pto">
-                        <span class="ews-icon-calendar"></span> ADD PTO
-                    </li> -->
-        </ul>
-      </div>
-    </div>
   </div>
   <!-- <hr> -->
   <div class="bottom-section">
-    <div class="labels">
-      <h2 id="utilization-title"></h2>
-    </div>
-    <div class="progress-container" id="utilization-progress"></div>
+      <div class="labels">
+          <h3>Team Progress</h3>
+          <p id="percentage-value"></p>
+      </div>
+      <div id="progress-bar"></div>
   </div>
   <div class="dashboard-body-container">
-    <div id="kpi-data" class="hidden"></div>
-    <div id="TasksList"></div>
+      <div id="kpi-data" class="hidden"></div>
+      <div id="TasksList"></div>
   </div>
   <div id="toast"></div>
   <div id="toastSave"></div>
